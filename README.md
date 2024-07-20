@@ -75,7 +75,7 @@ to download only the polyfills needed by the current browser. Just add the
 following line to the start of your page:
 
 ```html
-<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Map,Set,Element.prototype.matches,Node.prototype.contains"></script>
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=Map%2CSet%2CElement.prototype.matches%2CNode.prototype.contains"></script>
 ```
 
 ### Strict Content Security Policy
