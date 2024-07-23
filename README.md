@@ -70,7 +70,7 @@ In accordance with the W3C's new [polyfill
 guidance](https://www.w3.org/2001/tag/doc/polyfills/#don-t-serve-unnecessary-polyfills),
 the `inert` polyfill does not bundle other polyfills.
 
-You can use a service like [Polyfill.io](https://polyfill.io/v2/docs/examples)
+You can use a service like [https://cdnjs.cloudflare.com/polyfill](https://cdnjs.cloudflare.com/polyfill)
 to download only the polyfills needed by the current browser. Just add the
 following line to the start of your page:
 
@@ -144,7 +144,7 @@ Promise.resolve().then(() => {
 Tests are written using ES5 syntax. This is to avoid needing to transpile them
 for older browsers. There are a few modern features they rely upon, e.g.
 `Array.from` and `Promises`. These are polyfilled for the tests using
-[Polyfill.io](http://polyfill.io/). For a list of polyfilled features, check out
+[https://cdnjs.cloudflare.com/polyfill](https://cdnjs.cloudflare.com/polyfill). For a list of polyfilled features, check out
 the `polyfill` section in `karma.conf.js`.
 
 ### Big Thanks
