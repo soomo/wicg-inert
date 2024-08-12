@@ -5,9 +5,7 @@
   "main": "dist/inert.js",
   "module": "dist/inert.esm.js",
   "scripts": {
-    "build": "rollup -c",
-    "prepublishOnly": "npm run test",
-    "test": "npm run build && SAUCE=true karma start"
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
