@@ -14,11 +14,11 @@
   const slice = Array.prototype.slice;
 
   /**
-   * IE has a non-standard name for "matches".
+   * IE and earlier versions of Webkit/Blink browsers have a non-standard name for "matches".
    * @type {typeof Element.prototype.matches}
    */
   const matches =
-      Element.prototype.matches || Element.prototype.msMatchesSelector;
+      Element.prototype.matches || Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
 
   /** @type {string} */
   const _focusableElementsString = ['a[href]',
@@ -724,7 +724,7 @@
   if (!HTMLElement.prototype.hasOwnProperty('inert')) {
     /** @type {!InertManager} */
     const inertManager = new InertManager(document);
-    
+
     Object.defineProperty(HTMLElement.prototype, 'inert', {
       enumerable: true,
       /** @this {!HTMLElement} */
